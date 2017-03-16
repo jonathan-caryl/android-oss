@@ -9,6 +9,7 @@ import com.kickstarter.ui.viewholders.KSViewHolder;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.Optional;
 
 public final class LoggedOutViewHolder extends KSViewHolder {
   private Delegate delegate;
@@ -32,7 +33,7 @@ public final class LoggedOutViewHolder extends KSViewHolder {
   public void onBind() {
   }
 
-  @Nullable @OnClick(R.id.internal_tools_icon_button)
+  @Optional @OnClick(R.id.internal_tools_icon_button)
   public void internalToolsClick() {
     delegate.loggedOutViewHolderInternalToolsClick(this);
   }

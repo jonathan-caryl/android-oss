@@ -22,7 +22,7 @@ import java.lang.annotation.RetentionPolicy;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 @RequiresActivityViewModel(HelpViewModel.class)
@@ -39,8 +39,8 @@ public class HelpActivity extends BaseActivity<HelpViewModel> implements KSWebVi
 
   private @HelpType int helpType;
 
-  protected @Bind(R.id.kickstarter_web_view) KSWebView kickstarterWebView;
-  protected @Bind(R.id.loading_indicator_view) View loadingIndicatorView;
+  protected @BindView(R.id.kickstarter_web_view) KSWebView kickstarterWebView;
+  protected @BindView(R.id.loading_indicator_view) View loadingIndicatorView;
 
   @Inject @WebEndpoint String webEndpoint;
 

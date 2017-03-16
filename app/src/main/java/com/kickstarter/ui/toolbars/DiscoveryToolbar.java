@@ -25,17 +25,17 @@ import com.kickstarter.ui.activities.SearchActivity;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rx.Observable;
 
 public final class DiscoveryToolbar extends KSToolbar {
-  @Bind(R.id.activity_feed_button) TextView activityFeedButton;
-  @Bind(R.id.filter_text_view) TextView filterTextView;
-  @Bind(R.id.discovery_status_bar) View discoveryStatusBar;
-  @Bind(R.id.menu_button) TextView menuButton;
-  @Bind(R.id.search_button) TextView searchButton;
+  @BindView(R.id.activity_feed_button) TextView activityFeedButton;
+  @BindView(R.id.filter_text_view) TextView filterTextView;
+  @BindView(R.id.discovery_status_bar) View discoveryStatusBar;
+  @BindView(R.id.menu_button) TextView menuButton;
+  @BindView(R.id.search_button) TextView searchButton;
   @Inject CurrentUserType currentUser;
   @Inject KSString ksString;
   @Inject Logout logout;

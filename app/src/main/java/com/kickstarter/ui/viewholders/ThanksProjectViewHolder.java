@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.BindString;
 import butterknife.ButterKnife;
 
@@ -28,9 +28,9 @@ public final class ThanksProjectViewHolder extends KSViewHolder {
   private final Context context;
   private final Delegate delegate;
 
-  protected @Bind(R.id.time_to_go_text_view) TextView timeToGoTextView;
-  protected @Bind(R.id.name) TextView nameTextView;
-  protected @Bind(R.id.photo) ImageView photoImageView;
+  protected @BindView(R.id.time_to_go_text_view) TextView timeToGoTextView;
+  protected @BindView(R.id.name) TextView nameTextView;
+  protected @BindView(R.id.photo) ImageView photoImageView;
   protected @BindString(R.string.discovery_baseball_card_time_left_to_go) String timeLeftToGoString;
 
   protected @Inject KSString ksString;

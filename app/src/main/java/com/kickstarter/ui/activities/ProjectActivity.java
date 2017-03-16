@@ -28,7 +28,7 @@ import com.kickstarter.viewmodels.ProjectViewModel;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.BindColor;
 import butterknife.BindDimen;
 import butterknife.BindString;
@@ -40,12 +40,12 @@ import rx.android.schedulers.AndroidSchedulers;
 public final class ProjectActivity extends BaseActivity<ProjectViewModel.ViewModel> {
   private ProjectAdapter adapter;
 
-  protected @Bind(R.id.project_recycler_view) RecyclerView projectRecyclerView;
-  protected @Bind(R.id.star_icon) IconButton starButton;
-  protected @Bind(R.id.back_project_button) Button backProjectButton;
-  protected @Bind(R.id.manage_pledge_button) Button managePledgeButton;
-  protected @Bind(R.id.project_action_buttons) ViewGroup projectActionButtonsViewGroup;
-  protected @Bind(R.id.view_pledge_button) Button viewPledgeButton;
+  protected @BindView(R.id.project_recycler_view) RecyclerView projectRecyclerView;
+  protected @BindView(R.id.star_icon) IconButton starButton;
+  protected @BindView(R.id.back_project_button) Button backProjectButton;
+  protected @BindView(R.id.manage_pledge_button) Button managePledgeButton;
+  protected @BindView(R.id.project_action_buttons) ViewGroup projectActionButtonsViewGroup;
+  protected @BindView(R.id.view_pledge_button) Button viewPledgeButton;
 
   protected @BindColor(R.color.green) int green;
   protected @BindColor(R.color.text_primary) int textPrimary;

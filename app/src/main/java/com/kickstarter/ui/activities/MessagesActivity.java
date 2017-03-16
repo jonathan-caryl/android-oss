@@ -24,8 +24,8 @@ import com.kickstarter.models.Project;
 import com.kickstarter.ui.adapters.MessagesAdapter;
 import com.kickstarter.viewmodels.MessagesViewModel;
 
-import butterknife.Bind;
 import butterknife.BindString;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.kickstarter.libs.rx.transformers.Transformers.observeForUI;
@@ -36,13 +36,13 @@ public final class MessagesActivity extends BaseActivity<MessagesViewModel.ViewM
   private KSString ksString;
   private MessagesAdapter adapter;
 
-  protected @Bind(R.id.backing_amount_text_view) TextView backingAmountTextViewText;
-  protected @Bind(R.id.backing_info_view) View backingInfoView;
-  protected @Bind(R.id.messages_participant_name_text_view) TextView participantNameTextView;
-  protected @Bind(R.id.message_edit_text) EditText messageEditText;
-  protected @Bind(R.id.messages_project_name_text_view) TextView projectNameTextView;
-  protected @Bind(R.id.messages_recycler_view) RecyclerView recyclerView;
-  protected @Bind(R.id.view_pledge_button) Button viewPledgeButton;
+  protected @BindView(R.id.backing_amount_text_view) TextView backingAmountTextViewText;
+  protected @BindView(R.id.backing_info_view) View backingInfoView;
+  protected @BindView(R.id.messages_participant_name_text_view) TextView participantNameTextView;
+  protected @BindView(R.id.message_edit_text) EditText messageEditText;
+  protected @BindView(R.id.messages_project_name_text_view) TextView projectNameTextView;
+  protected @BindView(R.id.messages_recycler_view) RecyclerView recyclerView;
+  protected @BindView(R.id.view_pledge_button) Button viewPledgeButton;
 
   protected @BindString(R.string.backer_modal_pledge_amount_on_pledge_date) String pledgeAmountOnPledgeDateString;
   protected @BindString(R.string.project_view_button) String viewPledgeString;

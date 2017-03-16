@@ -26,7 +26,7 @@ import com.kickstarter.viewmodels.LoginViewModel;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.BindString;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -38,11 +38,11 @@ import static com.kickstarter.libs.utils.TransitionUtils.slideInFromLeft;
 
 @RequiresActivityViewModel(LoginViewModel.class)
 public final class LoginActivity extends BaseActivity<LoginViewModel> {
-  protected @Bind(R.id.email) EditText emailEditText;
-  protected @Bind(R.id.forgot_your_password_text_view) TextView forgotPasswordTextView;
-  protected @Bind(R.id.login_button) Button loginButton;
-  protected @Bind(R.id.login_toolbar) LoginToolbar loginToolbar;
-  protected @Bind(R.id.password) EditText passwordEditText;
+  protected @BindView(R.id.email) EditText emailEditText;
+  protected @BindView(R.id.forgot_your_password_text_view) TextView forgotPasswordTextView;
+  protected @BindView(R.id.login_button) Button loginButton;
+  protected @BindView(R.id.login_toolbar) LoginToolbar loginToolbar;
+  protected @BindView(R.id.password) EditText passwordEditText;
 
   protected @BindString(R.string.login_buttons_forgot_password_html) String forgotPasswordString;
   protected @BindString(R.string.forgot_password_we_sent_an_email_to_email_address_with_instructions_to_reset_your_password) String forgotPasswordSentEmailString;

@@ -17,8 +17,8 @@ import com.kickstarter.libs.utils.ViewUtils;
 import com.kickstarter.ui.adapters.MessageThreadsAdapter;
 import com.kickstarter.viewmodels.MessageThreadsViewModel;
 
-import butterknife.Bind;
 import butterknife.BindString;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.kickstarter.libs.rx.transformers.Transformers.observeForUI;
@@ -30,10 +30,10 @@ public class MessageThreadsActivity extends BaseActivity<MessageThreadsViewModel
   private RecyclerViewPaginator recyclerViewPaginator;
   private SwipeRefresher swipeRefresher;
 
-  protected @Bind(R.id.mailbox_text_view) TextView mailboxTextView;
-  protected @Bind(R.id.message_threads_recycler_view) RecyclerView recyclerView;
-  protected @Bind(R.id.message_threads_swipe_refresh_layout) SwipeRefreshLayout swipeRefreshLayout;
-  protected @Bind(R.id.unread_count_text_view) TextView unreadCountTextView;
+  protected @BindView(R.id.mailbox_text_view) TextView mailboxTextView;
+  protected @BindView(R.id.message_threads_recycler_view) RecyclerView recyclerView;
+  protected @BindView(R.id.message_threads_swipe_refresh_layout) SwipeRefreshLayout swipeRefreshLayout;
+  protected @BindView(R.id.unread_count_text_view) TextView unreadCountTextView;
 
   protected @BindString(R.string.messages_navigation_inbox) String inboxString;
 

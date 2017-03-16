@@ -44,7 +44,7 @@ import java.util.concurrent.TimeUnit;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.BindString;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -58,12 +58,12 @@ import static com.kickstarter.libs.rx.transformers.Transformers.ignoreValues;
 public final class ThanksActivity extends BaseActivity<ThanksViewModel> {
   protected @Inject KSString ksString;
 
-  protected @Bind(R.id.backed_project) TextView backedProjectTextView;
-  protected @Bind(R.id.recommended_projects_recycler_view) RecyclerView recommendedProjectsRecyclerView;
-  protected @Bind(R.id.share_button) Button shareButton;
-  protected @Bind(R.id.share_on_facebook_button) Button shareOnFacebookButton;
-  protected @Bind(R.id.share_on_twitter_button) Button shareOnTwitterButton;
-  protected @Bind(R.id.woohoo_background) ImageView woohooBackgroundImageView;
+  protected @BindView(R.id.backed_project) TextView backedProjectTextView;
+  protected @BindView(R.id.recommended_projects_recycler_view) RecyclerView recommendedProjectsRecyclerView;
+  protected @BindView(R.id.share_button) Button shareButton;
+  protected @BindView(R.id.share_on_facebook_button) Button shareOnFacebookButton;
+  protected @BindView(R.id.share_on_twitter_button) Button shareOnTwitterButton;
+  protected @BindView(R.id.woohoo_background) ImageView woohooBackgroundImageView;
 
   protected @BindString(R.string.project_checkout_share_twitter_I_just_backed_project_on_kickstarter) String iJustBackedString;
   protected @BindString(R.string.project_accessibility_button_share_label) String shareThisProjectString;

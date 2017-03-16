@@ -16,7 +16,7 @@ import com.kickstarter.models.Message;
 import com.kickstarter.viewmodels.MessageHolderViewModel;
 import com.squareup.picasso.Picasso;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.kickstarter.libs.rx.transformers.Transformers.observeForUI;
@@ -24,8 +24,8 @@ import static com.kickstarter.libs.rx.transformers.Transformers.observeForUI;
 public final class MessageViewHolder extends KSViewHolder {
   private final MessageHolderViewModel.ViewModel viewModel;
 
-  protected @Bind(R.id.message_body_text_view) TextView messageBodyTextView;
-  protected @Bind(R.id.sender_avatar_image_view) ImageView participantAvatarImageView;
+  protected @BindView(R.id.message_body_text_view) TextView messageBodyTextView;
+  protected @BindView(R.id.sender_avatar_image_view) ImageView participantAvatarImageView;
 
   public MessageViewHolder(final @NonNull View view) {
     super(view);

@@ -30,7 +30,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.kickstarter.libs.rx.transformers.Transformers.observeForUI;
@@ -38,8 +38,8 @@ import static com.kickstarter.libs.rx.transformers.Transformers.observeForUI;
 @RequiresActivityViewModel(ActivityFeedViewModel.ViewModel.class)
 public final class ActivityFeedActivity extends BaseActivity<ActivityFeedViewModel.ViewModel> {
   private ActivityFeedAdapter adapter;
-  protected @Bind(R.id.recycler_view) RecyclerView recyclerView;
-  protected @Bind(R.id.activity_feed_swipe_refresh_layout) SwipeRefreshLayout swipeRefreshLayout;
+  protected @BindView(R.id.recycler_view) RecyclerView recyclerView;
+  protected @BindView(R.id.activity_feed_swipe_refresh_layout) SwipeRefreshLayout swipeRefreshLayout;
 
   @Inject CurrentUserType currentUser;
 

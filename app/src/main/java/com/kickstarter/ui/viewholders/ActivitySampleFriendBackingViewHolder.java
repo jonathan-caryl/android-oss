@@ -22,7 +22,7 @@ import com.squareup.picasso.Picasso;
 
 import javax.inject.Inject;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.BindString;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -30,11 +30,11 @@ import butterknife.OnClick;
 public class ActivitySampleFriendBackingViewHolder extends KSViewHolder {
   @Inject KSString ksString;
 
-  protected @Bind(R.id.activity_click_area) LinearLayout activityClickArea;
-  protected @Bind(R.id.activity_image) ImageView activityImageView;
-  protected @Bind(R.id.activity_title) TextView activityTitleTextView;
-  protected @Bind(R.id.activity_subtitle) TextView activitySubtitleTextView;
-  protected @Bind(R.id.see_activity_button) Button seeActivityButton;
+  protected @BindView(R.id.activity_click_area) LinearLayout activityClickArea;
+  protected @BindView(R.id.activity_image) ImageView activityImageView;
+  protected @BindView(R.id.activity_title) TextView activityTitleTextView;
+  protected @BindView(R.id.activity_subtitle) TextView activitySubtitleTextView;
+  protected @BindView(R.id.see_activity_button) Button seeActivityButton;
   protected @BindString(R.string.activity_friend_backed_project_name_by_creator_name) String categoryBackingString;
 
   private Activity activity;

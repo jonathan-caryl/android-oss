@@ -21,7 +21,7 @@ import com.kickstarter.ui.toolbars.SearchToolbar;
 import com.kickstarter.ui.viewholders.ProjectSearchResultViewHolder;
 import com.kickstarter.viewmodels.SearchViewModel;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import rx.android.schedulers.AndroidSchedulers;
 
@@ -29,8 +29,8 @@ import rx.android.schedulers.AndroidSchedulers;
 public final class SearchActivity extends BaseActivity<SearchViewModel> implements SearchAdapter.Delegate {
   private SearchAdapter adapter;
   private RecyclerViewPaginator paginator;
-  protected @Bind(R.id.search_recycler_view) RecyclerView recyclerView;
-  protected @Bind(R.id.search_toolbar) SearchToolbar toolbar;
+  protected @BindView(R.id.search_recycler_view) RecyclerView recyclerView;
+  protected @BindView(R.id.search_toolbar) SearchToolbar toolbar;
 
   @Override
   protected void onCreate(final @Nullable Bundle savedInstanceState) {
